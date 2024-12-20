@@ -1,0 +1,97 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример сайта</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+        }
+        nav {
+            width: 20%;
+            background-color: #eaeaea;
+            padding: 15px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 10px 0;
+        }
+        .content {
+            width: 80%;
+            padding: 15px;
+        }
+        .banner {
+            background-color: #ccc;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+        .counter {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .logo {
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        let visitCount = 0;
+
+        function incrementCounter() {
+            visitCount++;
+            document.querySelector('.counter').textContent = `Счётчик Натыконых яблок: ${visitCount}`;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        Яблоко тык
+    </header>
+    <div class="container">
+        <nav>
+            <div>
+                <img src="https://cdn-img.perekrestok.ru/i/800x800-fit/xdelivery/files/a7/5c/6bd10780d88949d10ec6958bd546.jpg" alt="Логотип" class="logo" style="max-width: 100%;" onclick="incrementCounter()">
+            </div>
+            <ul>
+                <l1>Тыкай</l1>
+                <l2>Тыкай</l2>
+                <l3>Тыкай</l3>
+                <l4>Тыкай</l4>
+            </ul>
+            <div class="counter">Счётчик Натыконых яблок: 0</div>
+        </nav>
+        <div class="content">
+            <div class="banner"><img src="data:image/jpeg;base64,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" alt="Рекламный баннер" style="max-width: 100%;"></div>
+            <div>Ну тыкай яблоко и тыкай тыкай тыкай тыкай тыкай тыкай тыкай тыкай :> </div>
+        </div>
+    </div>
+    <footer>
+        
+    </footer>
+</body>
+</html>
+
+</html>
+
